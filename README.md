@@ -1,26 +1,53 @@
 # vuevatar
 
-## Project setup
+A flexible svg based vue.js component to create an avatar.
+
+Important Note: The component is still under development and not yet meant for productive use. 
+[https://github.com/Frankobingen/vuevatar/issues](Issues can be tracked on Github).
+
+## Demo
+
+A demo can be found here: [https://vuevata.tippfehlr.de/](https://vuevata.tippfehlr.de/)
+
+## Usage
+
 ```
-npm install
+npm install --save @frnak/vuevatar
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Single File Components
 
-### Compiles and minifies for production
 ```
-npm run build
-```
+<template>
+  <div class="page">
+    <vue-avatar 
+      @load="onAvatarLoad" 
+      v-model="user.avatar"
+    ></vue-avatar>
+  </div>
+</template>
 
-### Run your tests
-```
-npm run test
-```
+<script>
+import Vuevatar from '@frnak/vuevatar'
 
-### Lints and fixes files
-```
-npm run lint
+export default {
+  data () {
+    return {
+      user: {
+        avatar: null
+      }
+    }
+  },
+
+  methods: {
+    onAvatarLoad (data) {
+      this.user.avatar = data.random
+    }
+  },
+
+  components: {
+    'vue-avatar': Vuevatar
+  }
+}
+</script>
 ```

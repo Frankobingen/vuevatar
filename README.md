@@ -3,11 +3,11 @@
 A flexible svg based vue.js component to create an avatar.
 
 Important Note: The component is still under development and not yet meant for productive use. 
-[https://github.com/Frankobingen/vuevatar/issues](Issues can be tracked on Github).
+[Issues can be tracked on Github](https://github.com/Frankobingen/vuevatar/issues/).
 
 ## Demo
 
-A demo can be found here: [https://vuevata.tippfehlr.de/](https://vuevata.tippfehlr.de/)
+A demo can be found [here](https://vuevata.tippfehlr.de/)
 
 ## Usage
 

@@ -1,11 +1,12 @@
 {
   "name": "@frnak/vuevatar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./dist/vuevatar.common.js",
+  "license": "MIT",
   "scripts": {
     "lint": "vue-cli-service lint",
     "build-bundle": "vue-cli-service build --target lib --name vuevatar ./src/index.js",
-    "test": "vue-cli-service serve test/Test.vue",
+    "test": "vue-cli-service serve test/index.js",
     "test-build": "vue-cli-service build test/index.js --dest=test-dist"
   },
   "dependencies": {

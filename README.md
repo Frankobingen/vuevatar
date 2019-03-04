@@ -51,3 +51,11 @@ export default {
 }
 </script>
 ```
+
+### Using the Test.vue
+
+You can clone this repo and play with the `Test.vue` file in the `test` directory. You'll need vue-cli and the services intalled globally in order to make it run. (See the docs for more infromation)[https://cli.vuejs.org/guide/prototyping.html]
+
+- `npm install -g @vue/cli-service-global`
+- `npm install`
+- `vue serve test/Test.vue`

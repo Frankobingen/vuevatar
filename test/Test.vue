@@ -50,7 +50,6 @@ export default {
     applyOptions (data) {
       this.options = data.options
       this.user.avatar = data.random
-      console.log(data)
     }
   },
   components: {

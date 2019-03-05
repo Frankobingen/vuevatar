@@ -5,7 +5,10 @@
   <div class="page">
     <v-avataa @load="applyOptions"
               v-model="user.avatar"
+              ref="avatar"
     ></v-avataa>
+
+    <button @click="download">Download</button>
 
     <div class="options">
       <div class="option" v-for="(option, i) in options"
@@ -50,6 +53,10 @@ export default {
     applyOptions (data) {
       this.options = data.options
       this.user.avatar = data.random
+    },
+
+    download () {
+      this.$refs.avatar.toSingleSvg();
     }
   },
   components: {
@@ -71,6 +78,15 @@ html, body {
 
 .avataa-component {
   margin: auto;
+}
+
+button {
+  margin: 1rem auto;
+  display: block;
+  padding: 8px 12px;
+  background: #efefef;
+  border: 1px solid #bbbbbb;
+  cursor: pointer;
 }
 
 .options {

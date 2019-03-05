@@ -1,6 +1,6 @@
 <template>
   <div class="avataa-component" v-if="statics">
-    <svg viewBox="0 0 100 100" v-if="value">
+    <svg viewBox="0 0 100 100" v-if="value" xmlns="http://www.w3.org/2000/svg">
       <!-- background -->
       <component :is="load('background')"
                  :color="load('background', 'colors', 'backgroundColor')" />
@@ -102,6 +102,25 @@ export default {
       }
 
       return rand
+    },
+
+    toSingleSvg () {
+      let svg = '<?xml version="1.0" encoding="utf-8" ?>' + this.$el.innerHTML
+
+      let evt = new MouseEvent('click', {
+        view: window,
+        bubbles: false,
+        cancelable: true
+      })
+
+      var a = document.createElement('a')
+      a.setAttribute('download', 'vuevatar.svg')
+      a.setAttribute('href', "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svg))))
+      a.setAttribute('target', '_blank')
+
+      a.dispatchEvent(evt)
+
+      return svg
     }
   },
   computed: {

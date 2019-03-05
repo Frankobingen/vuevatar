@@ -1,6 +1,6 @@
 {
   "name": "@frnak/vuevatar",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./dist/vuevatar.common.js",
   "license": "MIT",
   "scripts": {

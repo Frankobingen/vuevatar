@@ -56,7 +56,7 @@ export default {
     },
 
     download () {
-      this.$refs.avatar.toSingleSvg();
+      this.$refs.avatar.download();
     }
   },
   components: {

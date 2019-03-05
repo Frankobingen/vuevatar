@@ -145,3 +145,28 @@ And bind these directly to the component
 | mouth           | Gap,Grin,Kiss,Neutral,Sad,Shocked,ShowTeeth,Smile,Tongue |
 
 Not every `hair` accepts a color via `hairColor`
+
+## Download
+
+The vuevatar component has a `download` method that will trigger the download of the currently configured avatar. Example
+
+Define a ref to make the component accessible via this.$refs
+
+```
+<vue-avatar 
+  ref="avatar"
+  ...
+></vue-avatar>
+
+<button @click="download">Download</button>
+```
+
+Get the component and call the download method.
+
+```
+methods: {
+  download () {
+    this.$refs.avatar.download()
+  }
+}
+```

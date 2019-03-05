@@ -104,7 +104,7 @@ export default {
       return rand
     },
 
-    toSingleSvg () {
+    download () {
       let svg = '<?xml version="1.0" encoding="utf-8" ?>' + this.$el.innerHTML
 
       let evt = new MouseEvent('click', {

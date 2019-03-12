@@ -26,7 +26,9 @@ import eyebrows_bushy from './svg/eyebrows/bushy.svg'
 import eyebrows_angry from './svg/eyebrows/angry.svg'
 import eyebrows_evil from './svg/eyebrows/evil.svg'
 // clothes
-import clothes_shirt_blue from './svg/clothes/blue_shirt.svg'
+import clothes_shirt from './svg/clothes/shirt.svg'
+import clothes_fancy_shirt from './svg/clothes/fancy_shirt.svg'
+import clothes_v_neck from './svg/clothes/v_neck.svg'
 // hair
 import hair_Male01 from './svg/hair/Male01.svg'
 import hair_Female01f from './svg/hair/Female01-front.svg'
@@ -92,7 +94,48 @@ const statics = {
     Evil: eyebrows_evil
   },
   clothes: {
-    BlueShirt: clothes_shirt_blue
+    Shirt: {
+      svg: clothes_shirt,
+      colors: {
+        Black: "#000000",
+        White: "#ffffff",
+        Blue: "#63cbe2",
+        Green: "#a4e263",
+        Grey: "#d3d3d3",
+        Pink: "#e263d8",
+        Purple: "#8263e2",
+        Red: "#e28963",
+        Yellow: "#e2cd63"
+      }
+    },
+    vNeckShirt: {
+      svg: clothes_v_neck,
+      colors: {
+        Black: "#000000",
+        White: "#ffffff",
+        Blue: "#63cbe2",
+        Green: "#a4e263",
+        Grey: "#d3d3d3",
+        Pink: "#e263d8",
+        Purple: "#8263e2",
+        Red: "#e28963",
+        Yellow: "#e2cd63"
+      }
+    },
+    FancyShirt: {
+      svg: clothes_fancy_shirt,
+      colors: {
+        Black: "#000000",
+        White: "#ffffff",
+        Blue: "#63cbe2",
+        Green: "#a4e263",
+        Grey: "#d3d3d3",
+        Pink: "#e263d8",
+        Purple: "#8263e2",
+        Red: "#e28963",
+        Yellow: "#e2cd63"
+      }
+    }
   },
   hair: {
     Male01: {

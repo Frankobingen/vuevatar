@@ -72,6 +72,7 @@ Most important is the `value` property that can be bound to the component. This 
 - eyes
 - eyebrows
 - clothes
+- clothesColor
 - hair
 - hairColor
 - accessoir
@@ -111,7 +112,8 @@ data () {
       background: "Circle",
       backgroundColor: "Blue",
       accessoir: "Ninja"
-      clothes: "BlueShirt",
+      clothes: "Shirt",
+      clothesColor: "Green",
       eyebrows: "Mono",
       eyes: "Closed",
       hair: "WorkerHelmet",
@@ -136,7 +138,8 @@ And bind these directly to the component
 | background      | Circle |
 | backgroundColor | Black,White,Blue,Green,Grey,Pink,Purple,Red |
 | accessoir       | Ninja,Flower |
-| clothes         | BlueShirt |
+| clothes         | Shirt,vNeckShirt,FancyShirt |
+| clothesColor    | Black,White,Blue,Green,Grey,Pink,Purple,Red,Yellow |
 | eyebrows        | Concerned,Mono,Angry,Bushy,Evil |
 | hair            | Male01,Female01,Bommel,WorkerHelmet |
 | hairColor       | Black,Blonde,Red,Brown |
@@ -144,7 +147,7 @@ And bind these directly to the component
 | headColor       | White,Brown,Yellow,Black |
 | mouth           | Gap,Grin,Kiss,Neutral,Sad,Shocked,ShowTeeth,Smile,Tongue |
 
-Not every `hair` accepts a color via `hairColor`
+Not every `hair` accepts a color via `hairColor`. Not every `clothes` accepts a color via `clothesColor`.
 
 ## Download
 

@@ -17,7 +17,8 @@
       <!-- eyebrows -->
       <component :is="load('eyebrows')" />
       <!-- shirt -->
-      <component :is="load('clothes')" />
+      <component :is="load('clothes')"
+                 :color="load('clothes', 'colors', 'clothesColor')" />
       <!-- hair (front) -->
       <component :is="load('hair', 'front')"
                  :color="load('hair', 'colors', 'hairColor')" />
@@ -49,6 +50,7 @@ export default {
           eyes: null,
           eyebrows: null,
           clothes: null,
+          clothesColor: null,
           hair: null,
           hairColor: null,
           accessoir: null

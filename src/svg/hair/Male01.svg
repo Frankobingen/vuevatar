@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
-	<rect fill="rgb(255,255,255)" fill-opacity="0" stroke="none" width="100.00001" height="100"/>
-	<defs>
-		<clipPath id="clip_0">
-			<rect width="100.00001" height="100" clip-rule="evenodd"/>
-		</clipPath>
-	</defs>
-	<g clip-path="url(#clip_0)">
-		<path fill="currentColor" stroke="none" transform="translate(26 2)" d="M0 1.83331C5.98814 -2.56109 11.3955 1.95831 22.1636 4.83331C32.9318 7.70831 45.6257 -1.9834 46 15.8333C45.9826 19.4234 18.7945 17.7812 8.78182 17.8333C-1.2309 17.8854 1.77727 10.7083 1.67273 7.33331C1.56818 3.95831 1.61516 5.19297 0 1.83331Z"/>
-	</g>
-
+	<path fill="currentColor" stroke="none" transform="translate(26 2)" d="M0 1.83331C5.98814 -2.56109 11.3955 1.95831 22.1636 4.83331C32.9318 7.70831 45.6257 -1.9834 46 15.8333C45.9826 19.4234 18.7945 17.7812 8.78182 17.8333C-1.2309 17.8854 1.77727 10.7083 1.67273 7.33331C1.56818 3.95831 1.61516 5.19297 0 1.83331Z"/>
 </svg>

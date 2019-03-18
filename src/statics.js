@@ -2,7 +2,7 @@
 import background_circle from './svg/backgrounds/circle.svg'
 // heads
 import head_default from './svg/heads/default.svg'
-// mouhts
+// mouths
 import mouth_gap from './svg/mouths/gap.svg'
 import mouth_grin from './svg/mouths/grin.svg'
 import mouth_kiss from './svg/mouths/kiss.svg'
@@ -31,6 +31,7 @@ import clothes_fancy_shirt from './svg/clothes/fancy_shirt.svg'
 import clothes_v_neck from './svg/clothes/v_neck.svg'
 // hair
 import hair_Male01 from './svg/hair/Male01.svg'
+import hair_Male02 from './svg/hair/Male02.svg'
 import hair_Female01f from './svg/hair/Female01-front.svg'
 import hair_Female01b from './svg/hair/Female01-back.svg'
 import hair_bommel from './svg/hair/bommel.svg'
@@ -38,6 +39,7 @@ import hair_worker from './svg/hair/worker.svg'
 // accessoir
 import accessoir_ninja from './svg/accessoirs/ninja.svg'
 import accessoir_flower from './svg/accessoirs/flower.svg'
+import accessoir_glasses from './svg/accessoirs/glasses.svg'
 
 function getDefaultHairColors() {
   return {
@@ -135,6 +137,10 @@ const statics = {
       front: hair_Male01,
       colors: getDefaultHairColors()
     },
+    Male02: {
+      front: hair_Male02,
+      colors: getDefaultHairColors()
+    },
     Female01: {
       front: hair_Female01f,
       back: hair_Female01b,
@@ -149,7 +155,8 @@ const statics = {
   },
   accessoir: {
     Ninja: accessoir_ninja,
-    Flower: accessoir_flower
+    Flower: accessoir_flower,
+    Glasses: accessoir_glasses
   }
 }
 

@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
-	<rect fill="rgb(255,255,255)" fill-opacity="0" stroke="none" width="100" height="100"/>
-	<defs>
-		<clipPath id="clip_0">
-			<rect width="100" height="100" clip-rule="evenodd"/>
-		</clipPath>
-	</defs>
-	<g clip-path="url(#clip_0)">
-		<path fill="none" stroke="rgb(33,26,3)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="translate(36 31.491)" d="M0 2.50901C0 2.50901 1.75 0.509012 3.5 0.509012C5.25 0.509012 5.42553 1.88743 6.5 2.50901C7.57447 3.13059 8.46619 3.1948 9.5 3.00901C10.5338 2.82322 10.6695 2.54027 11 2.00901C9.92502 2.29566 9.64894 2.88743 8 2.50901C6.35106 2.13059 6.01267 0.192648 4 0.00901222C1.98733 -0.174623 0 2.50901 0 2.50901Z"/>
-	</g>
-	<defs>
-		<clipPath id="clip_1">
-			<rect width="100" height="100" clip-rule="evenodd"/>
-		</clipPath>
-	</defs>
-	<g clip-path="url(#clip_1)">
-		<path fill="none" stroke="rgb(33,26,3)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 64 31.491)" d="M0 2.50901C0 2.50901 1.75 0.509012 3.5 0.509012C5.25 0.509012 5.42553 1.88743 6.5 2.50901C7.57447 3.13059 8.46619 3.1948 9.5 3.00901C10.5338 2.82322 10.6695 2.54027 11 2.00901C9.92502 2.29566 9.64894 2.88743 8 2.50901C6.35106 2.13059 6.01267 0.192648 4 0.00901222C1.98733 -0.174623 0 2.50901 0 2.50901Z"/>
-	</g>
-
+	<path fill="none" stroke="rgb(33,26,3)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="translate(36 31.491)" d="M0 2.50901C0 2.50901 1.75 0.509012 3.5 0.509012C5.25 0.509012 5.42553 1.88743 6.5 2.50901C7.57447 3.13059 8.46619 3.1948 9.5 3.00901C10.5338 2.82322 10.6695 2.54027 11 2.00901C9.92502 2.29566 9.64894 2.88743 8 2.50901C6.35106 2.13059 6.01267 0.192648 4 0.00901222C1.98733 -0.174623 0 2.50901 0 2.50901Z"/>
+	<path fill="none" stroke="rgb(33,26,3)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 64 31.491)" d="M0 2.50901C0 2.50901 1.75 0.509012 3.5 0.509012C5.25 0.509012 5.42553 1.88743 6.5 2.50901C7.57447 3.13059 8.46619 3.1948 9.5 3.00901C10.5338 2.82322 10.6695 2.54027 11 2.00901C9.92502 2.29566 9.64894 2.88743 8 2.50901C6.35106 2.13059 6.01267 0.192648 4 0.00901222C1.98733 -0.174623 0 2.50901 0 2.50901Z"/>
 </svg>

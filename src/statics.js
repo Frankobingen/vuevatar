@@ -39,6 +39,29 @@ import hair_worker from './svg/hair/worker.svg'
 import accessoir_ninja from './svg/accessoirs/ninja.svg'
 import accessoir_flower from './svg/accessoirs/flower.svg'
 
+function getDefaultHairColors() {
+  return {
+    Black: "#090806",
+    Blonde: "#DCD0BA",
+    Red: "#B55239",
+    Brown: "#6A4E42"
+  }
+}
+
+function getDefaultClothesColor() {
+  return {
+    Black: "#000000",
+    White: "#ffffff",
+    Blue: "#63cbe2",
+    Green: "#a4e263",
+    Grey: "#d3d3d3",
+    Pink: "#e263d8",
+    Purple: "#8263e2",
+    Red: "#e28963",
+    Yellow: "#e2cd63"
+  }
+}
+
 const statics = {
   background: {
     Circle: {
@@ -96,66 +119,26 @@ const statics = {
   clothes: {
     Shirt: {
       svg: clothes_shirt,
-      colors: {
-        Black: "#000000",
-        White: "#ffffff",
-        Blue: "#63cbe2",
-        Green: "#a4e263",
-        Grey: "#d3d3d3",
-        Pink: "#e263d8",
-        Purple: "#8263e2",
-        Red: "#e28963",
-        Yellow: "#e2cd63"
-      }
+      colors: getDefaultClothesColor()
     },
     vNeckShirt: {
       svg: clothes_v_neck,
-      colors: {
-        Black: "#000000",
-        White: "#ffffff",
-        Blue: "#63cbe2",
-        Green: "#a4e263",
-        Grey: "#d3d3d3",
-        Pink: "#e263d8",
-        Purple: "#8263e2",
-        Red: "#e28963",
-        Yellow: "#e2cd63"
-      }
+      colors: getDefaultClothesColor()
     },
     FancyShirt: {
       svg: clothes_fancy_shirt,
-      colors: {
-        Black: "#000000",
-        White: "#ffffff",
-        Blue: "#63cbe2",
-        Green: "#a4e263",
-        Grey: "#d3d3d3",
-        Pink: "#e263d8",
-        Purple: "#8263e2",
-        Red: "#e28963",
-        Yellow: "#e2cd63"
-      }
+      colors: getDefaultClothesColor()
     }
   },
   hair: {
     Male01: {
       front: hair_Male01,
-      colors: {
-        Black: "#090806",
-        Blonde: "#DCD0BA",
-        Red: "#B55239",
-        Brown: "#6A4E42"
-      }
+      colors: getDefaultHairColors()
     },
     Female01: {
       front: hair_Female01f,
       back: hair_Female01b,
-      colors: {
-        Black: "#090806",
-        Blonde: "#DCD0BA",
-        Red: "#B55239",
-        Brown: "#6A4E42"
-      }
+      colors: getDefaultHairColors()
     },
     Bommel: {
       front: hair_bommel

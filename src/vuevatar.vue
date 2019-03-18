@@ -107,7 +107,8 @@ export default {
     },
 
     download () {
-      let svg = '<?xml version="1.0" encoding="utf-8" ?>' + this.$el.innerHTML
+      let innerHtml = this.getInnerHtmlAndAddColors()
+      let svg = '<?xml version="1.0" encoding="utf-8" ?>' + innerHtml
 
       let evt = new MouseEvent('click', {
         view: window,
@@ -123,6 +124,28 @@ export default {
       a.dispatchEvent(evt)
 
       return svg
+    },
+
+    getInnerHtmlAndAddColors () {
+      let innerHtml = this.$el.innerHTML
+      let parts = innerHtml.split('<svg')
+
+      parts = parts.map(part => {
+        if (part.indexOf('currentColor') > -1) {
+          let regexResults = /color="(.*?)"/g.exec(part)
+          if (Array.isArray(regexResults) && regexResults.length > 1) {
+            let color = regexResults[1]
+            part = part.replace(/"currentColor"/, '"' + color + '"')
+          } else {
+            // eslint-disable-next-line
+            console.error("Could not determine color for part ", part)
+          }
+        }
+
+        return part
+      })
+
+      return parts.join('<svg')
     }
   },
   computed: {

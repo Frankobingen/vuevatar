@@ -24,6 +24,10 @@
                  :color="load('hair', 'colors', 'hairColor')" />
       <!-- accessoir -->
       <component :is="load('accessoir')" />
+
+      <clipPath id="background">
+        <path :transform="load('background', 'transform')" :d="load('background', 'clipPath')" />
+      </clipPath>
     </svg>
   </div>
 </template>

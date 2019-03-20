@@ -1,5 +1,6 @@
 // backgrounds
 import background_circle from './svg/backgrounds/circle.svg'
+import background_rect from './svg/backgrounds/rect.svg'
 // heads
 import head_default from './svg/heads/default.svg'
 // mouths
@@ -29,6 +30,7 @@ import eyebrows_evil from './svg/eyebrows/evil.svg'
 import clothes_shirt from './svg/clothes/shirt.svg'
 import clothes_fancy_shirt from './svg/clothes/fancy_shirt.svg'
 import clothes_v_neck from './svg/clothes/v_neck.svg'
+import clothes_hoodie from './svg/clothes/hoodie.svg'
 // hair
 import hair_Male01 from './svg/hair/Male01.svg'
 import hair_Male02 from './svg/hair/Male02.svg'
@@ -64,21 +66,33 @@ function getDefaultClothesColor() {
   }
 }
 
+function getBackgroundColors() {
+  return {
+    Black: "#000000",
+    White: "#ffffff",
+    Blue: "#63cbe2",
+    Green: "#a4e263",
+    Grey: "#d3d3d3",
+    Pink: "#e263d8",
+    Purple: "#8263e2",
+    Red: "#e28963",
+    Yellow: "#e2cd63"
+  }
+}
+
 const statics = {
   background: {
     Circle: {
       svg: background_circle,
-      colors: {
-        Black: "#000000",
-        White: "#ffffff",
-        Blue: "#63cbe2",
-        Green: "#a4e263",
-        Grey: "#d3d3d3",
-        Pink: "#e263d8",
-        Purple: "#8263e2",
-        Red: "#e28963",
-        Yellow: "#e2cd63"
-      }
+      clipPath: 'M0 44.375C0 19.8674 19.8674 0 44.375 0C68.8826 0 88.75 19.8674 88.75 44.375C88.75 68.8826 68.8826 88.75 44.375 88.75C19.8674 88.75 0 68.8826 0 44.375Z',
+      transform: 'translate(5.625 10.625)',
+      colors: getBackgroundColors()
+    },
+    Box: {
+      svg: background_rect,
+      clipPath: 'M3 100V10H97V100H3Z',
+      transform: null,
+      colors: getBackgroundColors()
     }
   },
   head: {
@@ -129,6 +143,10 @@ const statics = {
     },
     FancyShirt: {
       svg: clothes_fancy_shirt,
+      colors: getDefaultClothesColor()
+    },
+    Hoodie: {
+      svg: clothes_hoodie,
       colors: getDefaultClothesColor()
     }
   },

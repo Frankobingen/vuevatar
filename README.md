@@ -135,13 +135,13 @@ And bind these directly to the component
 
 | Property        | Allowed Values | 
 | --------------- | ------------- |
-| background      | Circle |
+| background      | Circle,Box |
 | backgroundColor | Black,White,Blue,Green,Grey,Pink,Purple,Red |
-| accessoir       | Ninja,Flower |
-| clothes         | Shirt,vNeckShirt,FancyShirt |
+| accessoir       | Ninja,Flower,Glasses |
+| clothes         | Shirt,vNeckShirt,FancyShirt,Hoodie |
 | clothesColor    | Black,White,Blue,Green,Grey,Pink,Purple,Red,Yellow |
 | eyebrows        | Concerned,Mono,Angry,Bushy,Evil |
-| hair            | Male01,Female01,Bommel,WorkerHelmet |
+| hair            | Male01,Male02,Female01,Bommel,WorkerHelmet |
 | hairColor       | Black,Blonde,Red,Brown |
 | head            | Default |
 | headColor       | White,Brown,Yellow,Black |

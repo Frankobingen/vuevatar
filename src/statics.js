@@ -31,24 +31,35 @@ import clothes_shirt from './svg/clothes/shirt.svg'
 import clothes_fancy_shirt from './svg/clothes/fancy_shirt.svg'
 import clothes_v_neck from './svg/clothes/v_neck.svg'
 import clothes_hoodie from './svg/clothes/hoodie.svg'
+import clothes_dress from './svg/clothes/dress.svg'
 // hair
 import hair_Male01 from './svg/hair/Male01.svg'
 import hair_Male02 from './svg/hair/Male02.svg'
 import hair_Female01f from './svg/hair/Female01-front.svg'
 import hair_Female01b from './svg/hair/Female01-back.svg'
+import hair_Female02f from './svg/hair/Female02-front.svg'
+import hair_Female02b from './svg/hair/Female02-back.svg'
+import hair_Female03 from './svg/hair/Female03.svg'
+import hair_Female04f from './svg/hair/Female04-front.svg'
+import hair_Female04b from './svg/hair/Female04-back.svg'
 import hair_bommel from './svg/hair/bommel.svg'
 import hair_worker from './svg/hair/worker.svg'
 // accessoir
 import accessoir_ninja from './svg/accessoirs/ninja.svg'
 import accessoir_flower from './svg/accessoirs/flower.svg'
 import accessoir_glasses from './svg/accessoirs/glasses.svg'
+import accessoir_devil from './svg/accessoirs/devil.svg'
+import accessoir_feather from './svg/accessoirs/feather.svg'
+// breard
+import beard_walrus from './svg/beards/walrus.svg'
+import beard_goaty from './svg/beards/goaty.svg'
 
 function getDefaultHairColors() {
   return {
     Black: "#090806",
-    Blonde: "#DCD0BA",
+    Blonde: "#CCA57D",
     Red: "#B55239",
-    Brown: "#6A4E42"
+    Brown: "#72442B"
   }
 }
 
@@ -99,7 +110,7 @@ const statics = {
     Default: {
       svg: head_default,
       colors: {
-        White: '#e2ca7a',
+        White: '#ffdbac',
         Brown: '#b89011',
         Yellow: '#fdd965',
         Black: '#634b01'
@@ -126,11 +137,17 @@ const statics = {
     Zombie: eyes_zombie
   },
   eyebrows: {
+    None: null,
     Concerned: eyebrows_concerned,
     Mono: eyebrows_mono,
     Angry: eyebrows_angry,
     Bushy: eyebrows_bushy,
     Evil: eyebrows_evil
+  },
+  beards: {
+    None: null,
+    Walrus: beard_walrus,
+    Goaty: beard_goaty
   },
   clothes: {
     Shirt: {
@@ -148,9 +165,14 @@ const statics = {
     Hoodie: {
       svg: clothes_hoodie,
       colors: getDefaultClothesColor()
+    },
+    Dress: {
+      svg: clothes_dress,
+      colors: getDefaultClothesColor()
     }
   },
   hair: {
+    None: null,
     Male01: {
       front: hair_Male01,
       colors: getDefaultHairColors()
@@ -164,6 +186,20 @@ const statics = {
       back: hair_Female01b,
       colors: getDefaultHairColors()
     },
+    Female02: {
+      front: hair_Female02f,
+      back: hair_Female02b,
+      colors: getDefaultHairColors()
+    },
+    Female03: {
+      front: hair_Female03,
+      colors: getDefaultHairColors()
+    },
+    Female04: {
+      front: hair_Female04f,
+      back: hair_Female04b,
+      colors: getDefaultHairColors()
+    },
     Bommel: {
       front: hair_bommel
     },
@@ -172,9 +208,12 @@ const statics = {
     }
   },
   accessoir: {
+    None: null,
     Ninja: accessoir_ninja,
     Flower: accessoir_flower,
-    Glasses: accessoir_glasses
+    Glasses: accessoir_glasses,
+    Devil: accessoir_devil,
+    Feather: accessoir_feather
   }
 }
 

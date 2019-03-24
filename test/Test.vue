@@ -16,7 +16,6 @@
       >
         <label>{{ i }}</label>
         <select v-model="user.avatar[i]">
-          <option :value="null"></option>
           <option v-for="(choice, j) in options[i]"
                   :key="j"
                   :value="j"

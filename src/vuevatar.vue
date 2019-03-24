@@ -16,6 +16,8 @@
       <component :is="load('eyes')" />
       <!-- eyebrows -->
       <component :is="load('eyebrows')" />
+      <!-- beards -->
+      <component :is="load('beards')" />
       <!-- shirt -->
       <component :is="load('clothes')"
                  :color="load('clothes', 'colors', 'clothesColor')" />
@@ -26,7 +28,7 @@
       <component :is="load('accessoir')" />
 
       <clipPath id="background">
-        <path :transform="load('background', 'transform')" :d="load('background', 'clipPath')" />
+        <path :transform="load('background', 'transform')" :d="loadClipPath('background', 'clipPath')" />
       </clipPath>
     </svg>
   </div>
@@ -53,6 +55,7 @@ export default {
           mouth: null,
           eyes: null,
           eyebrows: null,
+          beards: null,
           clothes: null,
           clothesColor: null,
           hair: null,
@@ -69,6 +72,12 @@ export default {
     })
   },
   methods: {
+    loadClipPath (key, detail) {
+      let clipPath = this.load(key, detail);
+
+      return clipPath || "M0 100V10H100V100H0Z"
+    },
+
     load (key, detail, detailKey) {
       let value = this.value[key]
 

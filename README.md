@@ -76,6 +76,7 @@ Most important is the `value` property that can be bound to the component. This 
 - hair
 - hairColor
 - accessoir
+- beard
 
 Each of these has a predefined set of options that can be passed via the `value` property of the component.
 
@@ -120,6 +121,7 @@ data () {
       head: "Default",
       headColor: "Black",
       mouth: "Grin",
+      beard: "None"
     }
   }
 }
@@ -137,15 +139,16 @@ And bind these directly to the component
 | --------------- | ------------- |
 | background      | Circle,Box |
 | backgroundColor | Black,White,Blue,Green,Grey,Pink,Purple,Red |
-| accessoir       | Ninja,Flower,Glasses |
-| clothes         | Shirt,vNeckShirt,FancyShirt,Hoodie |
+| accessoir       | None,Ninja,Flower,Glasses,Devil,Feather |
+| clothes         | Shirt,vNeckShirt,FancyShirt,Hoodie,Dress |
 | clothesColor    | Black,White,Blue,Green,Grey,Pink,Purple,Red,Yellow |
-| eyebrows        | Concerned,Mono,Angry,Bushy,Evil |
-| hair            | Male01,Male02,Female01,Bommel,WorkerHelmet |
+| eyebrows        | None,Concerned,Mono,Angry,Bushy,Evil |
+| hair            | None,Male01,Male02,Female01,Female02,Female03,Female04,Bommel,WorkerHelmet |
 | hairColor       | Black,Blonde,Red,Brown |
 | head            | Default |
 | headColor       | White,Brown,Yellow,Black |
 | mouth           | Gap,Grin,Kiss,Neutral,Sad,Shocked,ShowTeeth,Smile,Tongue |
+| beard           | None,Walrus,Goaty |
 
 Not every `hair` accepts a color via `hairColor`. Not every `clothes` accepts a color via `clothesColor`.
 

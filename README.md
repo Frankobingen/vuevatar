@@ -17,7 +17,7 @@ npm install --save @frnak/vuevatar
 
 ### Single File Components
 
-```
+```vue
 <template>
   <div class="page">
     <vue-avatar 
@@ -106,7 +106,7 @@ The data payload looks like
 
 The properties that are represented in `random` can directly passed to the `value` prop of the component as shown in the basic example at the very top. You can ofcourse also set every attribute individually.
 
-```
+```js
 data () {
   return {
     avatar: {
@@ -129,7 +129,7 @@ data () {
 
 And bind these directly to the component
 
-```
+```html
 <vue-avatar :value="avatar"></vue-avatar>
 ```
 
@@ -158,7 +158,7 @@ The vuevatar component has a `download` method that will trigger the download of
 
 Define a ref to make the component accessible via this.$refs
 
-```
+```html
 <vue-avatar 
   ref="avatar"
   ...
@@ -169,7 +169,7 @@ Define a ref to make the component accessible via this.$refs
 
 Get the component and call the download method.
 
-```
+```js
 methods: {
   download () {
     this.$refs.avatar.download()

@@ -1,6 +1,6 @@
 {
   "name": "@frnak/vuevatar",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "./dist/vuevatar.common.js",
   "license": "MIT",
   "scripts": {
@@ -9,17 +9,15 @@
     "test": "vue-cli-service serve test/index.js",
     "test-build": "vue-cli-service build test/index.js --dest=test-dist"
   },
-  "dependencies": {
-    "vue": "^2.6.6",
-    "vue-svg-loader": "^0.12.0"
-  },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
-    "@vue/cli-service": "^3.0.5",
+    "@vue/cli-service": "^4.1.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue": "^2.6.6",
+    "vue-svg-loader": "^0.12.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -52,5 +50,10 @@
     "*.json",
     "*.js"
   ],
-  "keywords": ["avatar", "generator", "vue", "vuevatar"]
+  "keywords": [
+    "avatar",
+    "generator",
+    "vue",
+    "vuevatar"
+  ]
 }
